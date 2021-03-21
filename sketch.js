@@ -122,7 +122,7 @@ function keyPressed(){
   
 async function getTime() {
   
-  var getinfo= await   fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata")
+  var getinfo= await fetch("http://worldclockapi.com/api/json/est/now");
   var infotype = await getinfo.json();
   console.log(infotype)
     
