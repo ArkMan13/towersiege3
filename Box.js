@@ -9,7 +9,7 @@ class Box{
       this.height = height;
       this.x = x;
       this.y = y;
-      this.visiblity =255;
+      this.visibility =255;
 
       World.add(world, this.body);
     }
@@ -26,8 +26,8 @@ class Box{
     } else {
         push ();
             World.remove(world,this.body);
-            this.visiblity = this.visiblity-1
-            tint(1000,200,this.visiblity)
+            this.visibility = this.visibility-1
+            tint(1000,200,this.visibility)
         pop();
     }
   }
