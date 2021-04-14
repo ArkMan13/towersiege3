@@ -137,9 +137,9 @@ async function getTime() {
   console.log(hr);
 
   if(hr >= 6 && hr <=18) {
-      bg = "daySky.jpg";
+      bg = daySky;
   } else {
-      bg = "nightSky.jpg";
+      bg = nightSky;
 
   }
 
