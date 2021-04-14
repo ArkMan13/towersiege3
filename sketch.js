@@ -10,11 +10,13 @@ var box1, box2, box3, box4, box5, box6, box7, box8, box9, box10, box11, box12, b
 var ball,ballp;
 var score=0;
 var slingShot;
-var backgroundImage;
+var backgroundImage, nightSky, daySky;
 
 function preload(){
     ballp = loadImage("polygon.png");
     getTime();
+    nightSky=loadImage("nighSky.jpg);
+    daySky=loadImage("daySky.jpg");
 }
 
 function setup(){
@@ -54,7 +56,8 @@ function setup(){
 
 function draw(){
     Engine.update(engine);
-    if(backgroundImage) background(backgroundImage); 
+    if(backgroundImage){
+    background(backgroundImage);} 
 
     ground1.display();
     fill("white")
