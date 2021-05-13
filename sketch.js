@@ -15,8 +15,6 @@ var backgroundImage, nightSky, daySky;
 function preload(){
     ballp = loadImage("polygon.png");
     getTime();
-    nightSky=loadImage("nighSky.jpg);
-    daySky=loadImage("daySky.jpg");
 }
 
 function setup(){
@@ -137,10 +135,9 @@ async function getTime() {
   console.log(hr);
 
   if(hr >= 6 && hr <=18) {
-      bg = daySky;
+       bg = "daySky.jpg";
   } else {
-      bg = nightSky;
-
+      bg = "nightSky.jpg";
   }
 
   backgroundImage = loadImage(bg);
