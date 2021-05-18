@@ -23,7 +23,7 @@ function setup(){
     Engine.run(engine);
     createCanvas(900,500)  
 
-  ground1 = new Ground(width/2-100, height/2+150, 300, 20);
+  ground1 = new Ground(width/2-100, height/2+150, 500, 20);
 
   ball = Bodies.circle(50, 200, 10);
   World.add(world, ball);
